@@ -1,0 +1,25 @@
+
+--- PAGE 1 ---
+Dummy PDF for Scraping Practice
+This is a dummy PDF generated to help you practice PDF scraping with Python.
+The file contains headings, paragraphs, a small numbered list, and a fake link.
+Use libraries like PyPDF2, pdfplumber, or PyMuPDF to extract the contents.
+Sample Steps:
+1. Download the PDF file.
+2. Try extracting text from each page.
+3. Try locating headings (e.g., 'Sample Steps').
+4. Try extracting any links or patterns.
+Related resource: https://example.com/sample-report
+Generated for scraping practice - page 1
+
+--- PAGE 2 ---
+Contact Information
+Company: Saurabh Infosys (Dummy)
+Email: info@example.com
+Phone: +91-12345-67890
+Short Notes:
+This PDF intentionally includes some short lines and simple structure to test extraction.
+- Point A: Details about A
+- Point B: Details about B
+- Point C: Details about C
+Generated for scraping practice - page 2

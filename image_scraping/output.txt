@@ -1,0 +1,24 @@
+Origin and growth
+
+In 1996 Jimmy Wales, a successful bond trader, moved to San Diego, to establish Bomis, Inc., a web portal
+company. In March 2000 Wales founded Nupedia, a free online encyclopedia, with Larry Sanger as editor in
+chief. Nupedia was organized like existing encyclopedias, with an advisory board of experts and a lengthy
+review process. By January 2001 fewer than two dozen articles were finished, and Sanger advocated
+supplementing Nupedia with an open-source encyclopedia based on wiki software. On January 15, 2001,
+Wikipedia was launched as a feature of Nupedia.com, but, following objections from the advisory board, it
+was relaunched as an independent website a few days later. In its first year Wikipedia expanded to some
+
+20,000 articles in 18 languages, including French, German, Polish, Dutch, Hebrew, Chinese, and Esperanto.
+In 2003 Nupedia was terminated and its articles moved into Wikipedia.
+
+By 2006 the English-language version of Wikipedia had more than 1,000,000 articles, and by the time of its
+1oth anniversary in 2011 it had surpassed 3,500,000. However, while the encyclopedia continued to expand
+at arate of millions of words per month, the number of new articles created each year gradually decreased,
+from a peak of 665,000 in 2007 to 374,000 in 2010. In response to this slowdown, the Wikimedia
+Foundation began to focus its expansion efforts on non-English versions of Wikipedia, which by 2011
+numbered more than 250. Some versions had already amassed hundreds of thousands of articles; indeed, the
+French and German versions both boasted more than a million. Consequently, the foundation paid particular
+attention to languages of the developing world, such as Swahili and Tamil, in an attempt to reach populations
+otherwise underserved by the Internet. One impediment to Wikipedia’s ability to reach a truly global
+audience, however, was the Chinese government's periodic restrictions of access to some or all of the site’s
+content within China.

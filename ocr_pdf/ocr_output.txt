@@ -1,0 +1,94 @@
+
+--- PAGE 1 ---
+Total Page No. : 4
+
+510405
+B.TECH. V SEM (OLD SCHEME) BACK
+EXAMINATION ACAD. SESSION 2023-24
+
+(ARTIFICAL INTELLIGENCE AND DATA
+SCIENCE)-V AND OTHER BRANCHES
+
+SAD4—-05 - Analysis of Algorithms
+Common with CSE, IT, MLC, DS
+
+Time : 3 Hours] i [Max. Marks : 120
+[Min. Passing Marks :
+
+Jastructions to paige: ma
+
+Part-A: Short Answer Type Question (up 1025: words). 10 x 2 =20 marks, All 10
+questions are compulsory. y i i
+
+Part-B: Analytical/Problem Solving questions 5 x 8 = 40 marks. Giididates have to
+answer 5 questions out of 7.
+
+Part-C : Descriptive/Analytical/Problem Solving questions 4 x 15 marks = 60 marks.
+Candidates have to answer 4 questions out of 5.
+
+Schematic diagrams must be shown wherever necessary. Any data you feel
+missing may suitably be assumed and stated clearly. Units of quantities used/
+calculated must be stated clearly.
+
+Use of the following supporting materials is permitted during examination.
+(Mentioned in form no. 205),
+
+F—193 (1) PTO.
+
+
+--- PAGE 2 ---
+é 4
+>
++
+f
+-
+
+
+
+--- PAGE 3 ---
+Part-B 5*x8=40
+
+QL Find the optimal schedule for the following task with given weights, Wj and
+
+deadlines, d,.
+
+1 2 3 4 5 6 7
+da, 4 2 4 3 i 4 6
+W, 70 60 50 40 30 20 10
+
+Q. 2. Inthe flow network, define the terms maximum cut, residual network, augmenting
+
+path, capacity and flow.
+Q. 3. Solve the below recurrence relations :
+
+@ Tn) =4T (W/2)+ 9? Jn
+
+Gi) T(m)=T(@-—2)+2 loge
+Q. 4 Give the tee a mon-<deu ministic graph eploring siecle with example.
+Q. 5. Analyses the behavior of Qu sort al gorishn fk wile Case Waltieveraae ease.
+Q. 6. Prove that edge contraction does not alter the min-cut size in a multigraph.
+ef Give an algorithm for graph eral. Analyse the algorithm.
+
+‘Part-C 4x15=60
+
+Q. Construct an instance of a knapsack problem that visits every leaf node, even if
+
+you use branch and bound with randomized. You can choose any well-defined
+
+ae
+
+estimation. ()
+
+L
+
+V2 Consider the string matching problem of finding all occurrences of pattern P =
+abcab in the text T = aaabcabad, where £ = {a@; 5; ¢ ; d}. Give the prefix
+function 7 for the pattern P, bad character function A for the pattern P and alphabet
+= and good suffix function y for the pattern P, Using the Boyer-Moore algorithm
+how far is the pattern shifted after the first character mismatch ?
+
+F-193 (3)
+
+
+--- PAGE 4 ---
+[No text found]
