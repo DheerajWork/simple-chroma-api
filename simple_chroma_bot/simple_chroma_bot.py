@@ -1,4 +1,3 @@
-# simple_chroma_bot.py
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
@@ -91,6 +90,7 @@ def scrape_site(url, headless=True):
     opt = Options()
     if headless:
         opt.add_argument("--headless")
+    opt.binary_location = "/usr/bin/chromium"  # Chrome binary path set here
     opt.add_argument("--no-sandbox")
     opt.add_argument("--disable-dev-shm-usage")
     opt.add_argument("--disable-gpu")
