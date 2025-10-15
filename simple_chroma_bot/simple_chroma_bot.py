@@ -87,7 +87,6 @@ def scrape_site(url, headless=True):
     if headless:
         opt.add_argument("--headless")
 
-    # ✅ Correct chromium binary path
     opt.binary_location = "/usr/bin/chromium-browser" if os.path.exists("/usr/bin/chromium-browser") else "/usr/bin/chromium"
     opt.add_argument("--no-sandbox")
     opt.add_argument("--disable-dev-shm-usage")
