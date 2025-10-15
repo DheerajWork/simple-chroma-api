@@ -3,7 +3,7 @@ from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
 from webdriver_manager.chrome import ChromeDriverManager
 from bs4 import BeautifulSoup
-import re, json, time, tldextract
+import re, json, time, tldextract, os
 
 def clean(text):
     return re.sub(r'\s+', ' ', text).strip() if text else "N/A"
@@ -83,15 +83,12 @@ def detect_business_line(text):
     return "Business / Service Provider"
 
 def scrape_site(url, headless=True):
-    """
-    Main function to scrape and return a dict.
-    Call this from API: result = scrape_site(url)
-    """
     opt = Options()
     if headless:
         opt.add_argument("--headless")
-    # Correct chromium binary path here
-    opt.binary_location = "/usr/bin/chromium"
+
+    # ✅ Correct chromium binary path
+    opt.binary_location = "/usr/bin/chromium-browser" if os.path.exists("/usr/bin/chromium-browser") else "/usr/bin/chromium"
     opt.add_argument("--no-sandbox")
     opt.add_argument("--disable-dev-shm-usage")
     opt.add_argument("--disable-gpu")
@@ -104,7 +101,6 @@ def scrape_site(url, headless=True):
 
     business_name = find_business_name(soup, url)
 
-    # About
     about_link = next((a['href'] for a in soup.find_all('a', href=True) if "about" in a['href'].lower()), "")
     about_text = ""
     if about_link:
@@ -114,7 +110,6 @@ def scrape_site(url, headless=True):
     else:
         about_text = clean(" ".join([p.get_text() for p in soup.find_all("p")[:5]]))
 
-    # Contact
     contact_link = next((a['href'] for a in soup.find_all('a', href=True) if "contact" in a['href'].lower()), "")
     contact_text, contact_soup = "", soup
     if contact_link:
