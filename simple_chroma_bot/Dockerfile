@@ -1,7 +1,7 @@
 FROM python:3.10-slim
 
 RUN apt-get update && apt-get install -y \
-    chromium-browser \
+    chromium \
     chromium-driver \
     fonts-liberation \
     libnss3 \
@@ -18,7 +18,7 @@ RUN apt-get update && apt-get install -y \
     libgtk-3-0 && \
     rm -rf /var/lib/apt/lists/*
 
-ENV CHROME_BIN="/usr/bin/chromium-browser"
+ENV CHROME_BIN="/usr/bin/chromium"
 ENV CHROME_DRIVER="/usr/bin/chromedriver"
 
 COPY requirements.txt .
