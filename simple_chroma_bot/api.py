@@ -10,17 +10,28 @@ app = FastAPI(
     docs_url="/ai-agents/docs",
     redoc_url="/ai-agents/redoc"
 )
-    
+
+# ✅ Root route (friendly message)
+@app.get("/")
+def root():
+    return {
+        "message": "API is live. Use POST /scrape with JSON body {'url': 'yourwebsite.com'}"
+    }
+
 # ✅ Input model
 class UrlInput(BaseModel):
     url: str
 
+# ✅ Scrape POST endpoint
 @app.post("/scrape")
 def scrape_data(input_data: UrlInput):
-    data = scrape_site(input_data.url)
-    return {"message": "Scraping complete", "data": data}
+    try:
+        data = scrape_site(input_data.url)
+        return {"message": "Scraping complete", "data": data}
+    except Exception as e:
+        return {"message": "Error occurred", "error": str(e)}
 
-# ✅ ये लाइन जरूरी है Render/Docker पर API चलाने के लिए
+# ✅ Render / Docker ke liye entrypoint
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run("api:app", host="0.0.0.0", port=10000)
