@@ -1,7 +1,7 @@
 # Base image
 FROM python:3.10-slim
 
-# Install Chrome + ChromeDriver + dependencies
+# Install Chromium + ChromeDriver + dependencies
 RUN apt-get update && apt-get install -y \
     chromium-browser \
     chromium-chromedriver \
@@ -20,7 +20,7 @@ RUN apt-get update && apt-get install -y \
     libgtk-3-0 && \
     rm -rf /var/lib/apt/lists/*
 
-# Environment variables for Chrome
+# Environment variables for Selenium
 ENV CHROME_BIN="/usr/bin/chromium-browser"
 ENV CHROME_DRIVER="/usr/bin/chromedriver"
 
