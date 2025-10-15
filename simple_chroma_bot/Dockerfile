@@ -1,8 +1,10 @@
+# ✅ Base image
 FROM python:3.10-slim
 
+# ✅ Chrome + ChromeDriver install
 RUN apt-get update && apt-get install -y \
-    chromium \
-    chromium-driver \
+    chromium-browser \
+    chromium-chromedriver \
     fonts-liberation \
     libnss3 \
     libgconf-2-4 \
@@ -18,12 +20,16 @@ RUN apt-get update && apt-get install -y \
     libgtk-3-0 && \
     rm -rf /var/lib/apt/lists/*
 
-ENV CHROME_BIN="/usr/bin/chromium"
+# ✅ Environment variables (Chrome path)
+ENV CHROME_BIN="/usr/bin/chromium-browser"
 ENV CHROME_DRIVER="/usr/bin/chromedriver"
 
+# ✅ Install Python dependencies
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
+# ✅ Copy project files
 COPY . .
 
+# ✅ Run FastAPI app
 CMD ["uvicorn", "api:app", "--host", "0.0.0.0", "--port", "10000"]
