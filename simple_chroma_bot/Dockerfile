@@ -1,9 +1,7 @@
-# Base image
 FROM python:3.10-slim
 
-# Chrome aur dependencies install karna
 RUN apt-get update && apt-get install -y \
-    chromium \
+    chromium-browser \
     chromium-driver \
     fonts-liberation \
     libnss3 \
@@ -20,16 +18,12 @@ RUN apt-get update && apt-get install -y \
     libgtk-3-0 && \
     rm -rf /var/lib/apt/lists/*
 
-# Chrome binary ke path set karna
-ENV CHROME_BIN="/usr/bin/chromium"
+ENV CHROME_BIN="/usr/bin/chromium-browser"
 ENV CHROME_DRIVER="/usr/bin/chromedriver"
 
-# Requirements file copy karna aur install karna
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Saare source code copy karna
 COPY . .
 
-# FastAPI app start karna (jo aapke api.py me hai)
 CMD ["uvicorn", "api:app", "--host", "0.0.0.0", "--port", "10000"]
